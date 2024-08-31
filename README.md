@@ -1,6 +1,6 @@
 # lista_filmes
 
-Projeto para exibição de uma lista de filmes, similares a uma plataforma de streaming.
+Projeto para exibição de uma lista de filmes, similar a uma plataforma de streaming.
 
 ## Getting Started
 
