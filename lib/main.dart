@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lista_filmes/movie_list_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,12 +12,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Movie App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        scaffoldBackgroundColor: const Color(0xFF151730),
+        colorScheme: const ColorScheme.dark(
+          primary: Color(0xffbb86fc),
+        ),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF151730),
+        ),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MovieListPage(),
     );
   }
 }
