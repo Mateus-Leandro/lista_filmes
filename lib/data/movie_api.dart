@@ -7,7 +7,7 @@ class MovieApi {
   );
 
   Future<List<Movie>> getMovies({int skip = 0, int take = 20}) async {
-    var response = await _dio.get('/Filmes?skip$skip&take=$take');
+    var response = await _dio.get('/Filme?skip=$skip&take=$take');
     return (response.data as List)
         .map((movie) => Movie.fromJson(movie))
         .toList();
